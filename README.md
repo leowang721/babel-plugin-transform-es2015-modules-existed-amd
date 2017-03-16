@@ -11,9 +11,6 @@ define(function(require) {
 });
 ```
 
-1. add `.default` to require
-2. add `default` to return
-
 in .babelrc
 ```
 {
@@ -53,21 +50,27 @@ Out:
 define(function (require) {
     'use strict';
 
-    var a = require('a').default;
-    var c = require('b').default.c;
-    var d = require('e').default.f.g;
+    var a = _interopRequireDefault(require('a'));
+    var c = _interopRequireDefault(require('b')).c;
+    var d = _interopRequireDefault(require('e')).f.g;
 
-    require('lodash');
-    require('wer').default();
+    _interopRequireDefault(require('lodash'));
+    _interopRequireDefault(require('wer'))();
 
     function t() {
-        require('sss').default.go();
+        _interopRequireDefault(require('sss')).go();
     }
 
     require(['aaa']);
 
-    var __esModuleAMDExport = { hello: 'world' };
-
+    var __esModuleAMDExport = {
+        default: { hello: 'world' },
+        __esModule: true
+    };
     return __esModuleAMDExport;
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj.default : obj;
+    }
 });
 ```

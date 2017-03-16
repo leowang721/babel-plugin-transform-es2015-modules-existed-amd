@@ -14,6 +14,17 @@ define(function(require) {
 1. add `.default` to require
 2. add `default` to return
 
+in .babelrc
+```
+{
+    "presets": ["es2015"],
+    "plugins": [
+        "transform-es2015-modules-amd",
+        "transform-es2015-modules-existed-amd"
+    ]
+}
+```
+
 ## Example
 
 In:

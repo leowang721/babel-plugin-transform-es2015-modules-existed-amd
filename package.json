@@ -1,0 +1,26 @@
+{
+  "name": "babel-plugin-transform-es2015-modules-existed-amd",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Leo Wang",
+    "email": "leowang721@gmail.com",
+    "url": "http://leowang721.github.io"
+  },
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "description": "This plugin transforms old AMD modules to fit those transformed from ES2015 modules by babel6",
+  "homepage": "https://github.com/leowang721/babel-plugin-transform-es2015-modules-existed-amd",
+  "repository": "git://github.com/leowang721/babel-plugin-transform-es2015-modules-existed-amd",
+  "keywords": [
+    "babel-plugin",
+    "AMD",
+    "old module"
+  ],
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {}
+}
